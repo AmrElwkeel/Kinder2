@@ -176,7 +176,7 @@
                 <Column editable="false" title="&#x627;&#x633;&#x645; &#x627;&#x644;&#x645;&#x62f;&#x631;&#x633;" type="java.lang.Object"/>
                 <Column editable="false" title="&#x627;&#x644;&#x648;&#x638;&#x64a;&#x641;&#x647; &#x627;&#x644;&#x645;&#x648;&#x643;&#x644;&#x647;" type="java.lang.Object"/>
                 <Column editable="false" title="&#x627;&#x644;&#x641;&#x635;&#x644; &#x627;&#x644;&#x645;&#x647;&#x62a;&#x645; &#x628;&#x647;" type="java.lang.Object"/>
-                <Column editable="false" title="&#x64a;&#x648;&#x645; &#x627;&#x644;&#x63a;&#x64a;&#x627;&#x628;" type="java.lang.Object"/>
+                <Column editable="false" title="&#x633;&#x628;&#x628; &#x627;&#x644;&#x63a;&#x64a;&#x627;&#x628;" type="java.lang.Object"/>
                 <Column editable="false" title="&#x627;&#x644;&#x62a;&#x627;&#x631;&#x64a;&#x62e;" type="java.lang.Object"/>
               </Table>
             </Property>
@@ -184,32 +184,32 @@
             <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
               <TableColumnModel selectionModel="1">
                 <Column maxWidth="100" minWidth="100" prefWidth="100" resizable="true">
-                  <Title value="Number"/>
+                  <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title value="Name Teacher"/>
+                  <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title value="Job"/>
+                  <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title value="Supervisor On"/>
+                  <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title value="Day Absence"/>
+                  <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
                 <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                  <Title value="History"/>
+                  <Title/>
                   <Editor/>
                   <Renderer/>
                 </Column>
@@ -362,7 +362,7 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="ff" green="ff" red="99" type="rgb"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="&#x627;&#x644;&#x64a;&#x648;&#x645;"/>
+        <Property name="text" type="java.lang.String" value="&#x627;&#x644;&#x633;&#x628;&#x628;"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

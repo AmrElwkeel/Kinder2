@@ -66,28 +66,7 @@ public class go{
        }
       return false;
     }
-     public static boolean CheckUserAndPassword(String Password){
-       try{
-        SetConnection();
-        Statement stmt = con.createStatement();
-        String checkUser = "select * from users where "
-               
-                + "password='" + Password + "'";
-        stmt.executeQuery(checkUser);
-        while(stmt.getResultSet().next()){
-           con.close();
-            return true;
-          
-        
-        }
-        con.close();
-                
-       }catch(SQLException ex){
-          JOptionPane.showMessageDialog(null, ex.getMessage());
-       
-       }
-      return false;
-    }
+    
     public static boolean RunQeuery(String sqlstatement){
          try {
              SetConnection();
@@ -197,7 +176,7 @@ public class go{
       SetConnection();
       Statement stmt = con.createStatement();
       ResultSet rs ;
-      String srtpart = filltableorstatement.substring(0,7).toLowerCase();
+      String srtpart = filltableorstatement.substring(5).toLowerCase();
       String strSelect;
       if( "select ".equals (srtpart) ){
            strSelect=filltableorstatement;

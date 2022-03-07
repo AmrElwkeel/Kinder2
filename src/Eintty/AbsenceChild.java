@@ -79,7 +79,7 @@ public class AbsenceChild implements InterFace{
 
     @Override
     public void getAllRow(JTable table) {
-        db.go.FillJTable("absence_Child", table);
+        db.go.FillJTable("absenceChild", table);
     }
 
     @Override

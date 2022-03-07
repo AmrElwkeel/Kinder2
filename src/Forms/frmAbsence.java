@@ -65,7 +65,7 @@ public class frmAbsence extends javax.swing.JFrame {
 
             },
             new String [] {
-                "رقم الطفل", "اسم الطفل", "اليوم", "التاريخ"
+                "رقم الطفل", "اسم الطفل", "سبب الغياب", "التاريخ"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -90,6 +90,7 @@ public class frmAbsence extends javax.swing.JFrame {
             }
         });
         jScrollPane1.setViewportView(jTable1);
+        jTable1.getColumnModel().getSelectionModel().setSelectionMode(javax.swing.ListSelectionModel.SINGLE_INTERVAL_SELECTION);
 
         getContentPane().add(jScrollPane1);
         jScrollPane1.setBounds(510, 140, 740, 440);
@@ -110,7 +111,7 @@ public class frmAbsence extends javax.swing.JFrame {
         jLabel3.setBounds(10, 240, 130, 22);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        jLabel4.setText("اليوم");
+        jLabel4.setText("السبب");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(30, 300, 110, 22);
 

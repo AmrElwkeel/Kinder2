@@ -39,8 +39,6 @@ public class CreateAccount extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         txtnewUser = new Controls.TextBox(20);
         jLabel4 = new javax.swing.JLabel();
-        txtOldPass = new Controls.Password(20);
-        jLabel3 = new javax.swing.JLabel();
         Back = new Controls.button();
         button1 = new Controls.button();
         jLabel6 = new javax.swing.JLabel();
@@ -88,32 +86,19 @@ public class CreateAccount extends javax.swing.JFrame {
             }
         });
         jPanel1.add(txtNewPassword);
-        txtNewPassword.setBounds(170, 270, 220, 40);
+        txtNewPassword.setBounds(170, 230, 220, 40);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel1.setText("الباسورد الجديد");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(20, 280, 130, 30);
+        jLabel1.setBounds(20, 240, 130, 30);
         jPanel1.add(txtnewUser);
-        txtnewUser.setBounds(170, 180, 220, 40);
+        txtnewUser.setBounds(170, 120, 220, 40);
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         jLabel4.setText("اسم المستخدم");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(20, 180, 110, 30);
-
-        txtOldPass.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtOldPassActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtOldPass);
-        txtOldPass.setBounds(170, 100, 220, 40);
-
-        jLabel3.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel3.setText("الباسورد القديم");
-        jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, 100, 130, 30);
+        jLabel4.setBounds(20, 120, 110, 30);
 
         Back.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Forms/arrow_left_32.png"))); // NOI18N
         Back.setText("رجوع");
@@ -155,9 +140,8 @@ public class CreateAccount extends javax.swing.JFrame {
   
   }
     private void btnCreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCreateActionPerformed
-      String strchek=txtOldPass.getText();
-      boolean is=db.go.CheckUserAndPassword(strchek);
-      if(is){
+     
+      
  
       NewAcount n = new NewAcount();
        
@@ -167,16 +151,8 @@ public class CreateAccount extends javax.swing.JFrame {
        clear();
        Tools.MsgBox("Sucss");
       
-      }else{
-      
-       Tools.MsgBox("Old Password is Erorr");
-      }
        
     }//GEN-LAST:event_btnCreateActionPerformed
-
-    private void txtOldPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtOldPassActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtOldPassActionPerformed
 
     private void txtNewPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNewPasswordActionPerformed
         // TODO add your handling code here:
@@ -234,12 +210,10 @@ public class CreateAccount extends javax.swing.JFrame {
     private Controls.button button1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField txtNewPassword;
-    private javax.swing.JTextField txtOldPass;
     private javax.swing.JTextField txtnewUser;
     // End of variables declaration//GEN-END:variables
 }

@@ -48,7 +48,6 @@ public class frmmain extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 60)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 0, 0));
         jLabel1.setText("الشاشه الرئيسيه");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(350, 0, 510, 80);

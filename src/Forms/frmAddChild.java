@@ -155,12 +155,19 @@ public class frmAddChild extends javax.swing.JFrame {
 
             },
             new String [] {
-                "رقم الطفل", "الاسم", "العنوان", "المدفوعات", "تاريخ التسجيل", "تاريخ الميلاد", "ذكر , انثى", "اسم الفصل", "رقم الفصل"
+                "رقم الطفل", "الاسم", "العنوان", "المدفوعات", "تاريخ التسجيل", "تاريخ الميلاد", "ذكر , انثى", "اسم الفصل", "رقم الفصل", "null"
             }
         ) {
-            boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Object.class, java.lang.Integer.class
             };
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, false, true
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
                 return canEdit [columnIndex];
@@ -355,6 +362,12 @@ public class frmAddChild extends javax.swing.JFrame {
         jLabel11.setText("اسم الفصل");
         getContentPane().add(jLabel11);
         jLabel11.setBounds(0, 480, 110, 30);
+
+        combobox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                combobox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(combobox1);
         combobox1.setBounds(150, 480, 220, 30);
         getContentPane().add(jDateBirth);
@@ -470,14 +483,15 @@ public class frmAddChild extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-          setSize(1580,830);
+        
+        setSize(1580,830);
         getContentPane().setBackground(new Color(120,225,225));
         setLocation(40,10);
              
          db.go.FillCombo("ClassRoom", "ClassName", combobox1);
          Clear();
-      c.getAllRow(jtableAdd);
-      p.getAllRow(jTable1);
+         c.getAllRow(jtableAdd);
+         p.getAllRow(jTable1);
    
     }//GEN-LAST:event_formWindowOpened
      Child c = new Child();
@@ -697,6 +711,10 @@ public class frmAddChild extends javax.swing.JFrame {
         Tools.OpenForm(new frmInf());
         dispose();
     }//GEN-LAST:event_button2ActionPerformed
+
+    private void combobox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_combobox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_combobox1ActionPerformed
 
     /**
      * @param args the command line arguments

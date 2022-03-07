@@ -99,7 +99,7 @@ public class Phon implements InterFace{
 
     @Override
     public void getAllRow(JTable table) {
-        db.go.FillJTable("child_phones", table);
+        db.go.FillJTable("child_phon", table);
     }
 
     @Override

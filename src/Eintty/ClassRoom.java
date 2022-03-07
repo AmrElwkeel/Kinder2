@@ -74,7 +74,7 @@ public class ClassRoom implements InterFace{
 
     @Override
     public void getAllRow(JTable table) {
-     db.go.FillJTable("class_room", table);
+     db.go.FillJTable("classroom", table);
     }
 
     @Override

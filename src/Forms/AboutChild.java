@@ -164,7 +164,7 @@ public class AboutChild extends javax.swing.JFrame {
     private void jTableAllMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTableAllMouseClicked
         int row =jTableAll.getSelectedRow();
         Child c = new Child();
-         db.go.FillJTable("child_data", jTableAll);
+         db.go.FillJTable("child", jTableAll);
         c.getAllRow(jTableAll);
     }//GEN-LAST:event_jTableAllMouseClicked
 
@@ -176,7 +176,7 @@ public class AboutChild extends javax.swing.JFrame {
     private void jTable1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTable1MouseClicked
        int row1 = jTable1.getSelectedRow();
        Phon p = new Phon();
-       db.go.FillJTable("child_phones", jTable1);
+       db.go.FillJTable("child_phon", jTable1);
        p.getAllRow(jTable1);
     }//GEN-LAST:event_jTable1MouseClicked
 

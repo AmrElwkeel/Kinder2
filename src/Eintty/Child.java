@@ -134,7 +134,7 @@ public class Child implements InterFace{
 
     @Override
     public void getAllRow(JTable table) {
-       db.go.FillJTable("child_data", table);
+       db.go.FillJTable("child", table);
     }
 
     @Override
@@ -151,7 +151,7 @@ public class Child implements InterFace{
 
     @Override
     public String getNameByVaule(String value) {
-          String strval = "select * from childname "
+          String strval = "select * from namechild "
                   +" where idchild =" + value ;
          String getName = (String)db.go.getTableData(strval).items[0][0].toString();
          return getName;

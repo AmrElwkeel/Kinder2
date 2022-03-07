@@ -34,7 +34,7 @@ public class NewAcount  implements InterFace{
 
     @Override
     public void Add() {
-        String strNew = "insert into users values("
+        String strNew = "insert into login values("
                 +"'"+userName+"',"
                 +"'"+Password +"')";
         boolean isAdd=db.go.RunQeuery(strNew);
@@ -46,7 +46,7 @@ public class NewAcount  implements InterFace{
 
     @Override
     public void Delete() {
-        String strDel ="delete from users "+
+        String strDel ="delete from login "+
                 " where USERNAME='"+userName+"',"+
                         "PASSWORD='"+Password;
         boolean isDelete=db.go.RunQeuery(strDel);
@@ -57,7 +57,7 @@ public class NewAcount  implements InterFace{
 
     @Override
     public void Update() {
-         String strUp="update users set"
+         String strUp="update login set"
                  +"USERNAME='"+userName+"',"
                  +"PASSWORD="+Password;
          boolean isUpdate =db.go.RunQeuery(strUp);

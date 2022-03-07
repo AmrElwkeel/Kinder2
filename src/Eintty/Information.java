@@ -73,7 +73,7 @@ public class Information implements InterFace{
     @Override
     public void Delete() {
       String srtDel = "Delete from inform"
-              + " where numberChild =" + Number;
+              + " where NumberChild =" + Number;
       boolean isDelete=db.go.RunQeuery(srtDel);
       if(isDelete){
       
@@ -103,7 +103,7 @@ public class Information implements InterFace{
 
     @Override
     public void getAllRow(JTable table) {
-       db.go.FillJTable("child_inform", table);
+       db.go.FillJTable("inform", table);
     }
 
     @Override

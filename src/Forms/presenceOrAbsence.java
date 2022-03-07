@@ -134,7 +134,7 @@ public class presenceOrAbsence extends javax.swing.JFrame {
 
             },
             new String [] {
-                "الرقم", "اسم المدرس", "الوظيفه الموكله", "الفصل المهتم به", "يوم الغياب", "التاريخ"
+                "الرقم", "اسم المدرس", "الوظيفه الموكله", "الفصل المهتم به", "سبب الغياب", "التاريخ"
             }
         ) {
             boolean[] canEdit = new boolean [] {
@@ -171,12 +171,6 @@ public class presenceOrAbsence extends javax.swing.JFrame {
             jTable.getColumnModel().getColumn(0).setMinWidth(100);
             jTable.getColumnModel().getColumn(0).setPreferredWidth(100);
             jTable.getColumnModel().getColumn(0).setMaxWidth(100);
-            jTable.getColumnModel().getColumn(0).setHeaderValue("Number");
-            jTable.getColumnModel().getColumn(1).setHeaderValue("Name Teacher");
-            jTable.getColumnModel().getColumn(2).setHeaderValue("Job");
-            jTable.getColumnModel().getColumn(3).setHeaderValue("Supervisor On");
-            jTable.getColumnModel().getColumn(4).setHeaderValue("Day Absence");
-            jTable.getColumnModel().getColumn(5).setHeaderValue("History");
         }
 
         getContentPane().add(jScrollPane1);
@@ -228,7 +222,7 @@ public class presenceOrAbsence extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(153, 255, 255));
-        jLabel7.setText("اليوم");
+        jLabel7.setText("السبب");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(20, 370, 99, 33);
 
